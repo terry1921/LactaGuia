@@ -2,58 +2,68 @@ package com.mx.terryrockstar.lactaguia.summary
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Base64
 import android.view.View
 import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mx.terryrockstar.lactaguia.R
-import com.mx.terryrockstar.lactaguia.main.THEME
-import com.mx.terryrockstar.lactaguia.main.domain.model.Theme
+import com.mx.terryrockstar.lactaguia.main.TOPIC
+import com.mx.terryrockstar.lactaguia.main.domain.adapter.SubTopicAdapter
+import com.mx.terryrockstar.lactaguia.main.domain.model.Topic
 import com.mx.terryrockstar.lactaguia.utils.isPair
 import kotlinx.android.synthetic.main.activity_summary.*
-import kotlinx.android.synthetic.main.theme_five.*
 
 class SummaryActivity : AppCompatActivity() {
+
+    private lateinit var mAdapter: SubTopicAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_summary)
 
-        val theme: Theme? = intent.getParcelableExtra(THEME)
-
+        val topic: Topic? = intent.getParcelableExtra(TOPIC)
         close.setOnClickListener { onBackPressed() }
+        mAdapter = SubTopicAdapter()
+        subTopics.apply {
+            adapter = mAdapter
+            setHasFixedSize(true)
+        }
+        initUI(topic)
+    }
 
-        theme?.let {
-            if (it.id.isPair()) {
-                container.setBackgroundColor(ContextCompat.getColor(this@SummaryActivity, R.color.purple_800))
+    private fun initUI(topic: Topic?) {
+        topic?.let { t ->
+            // color background
+            if (t.id.isPair()) {
+                container.setBackgroundColor(ContextCompat.getColor(this@SummaryActivity, R.color.purple_theme))
                 topColorBar.setImageResource(R.drawable.ic_summary_top_purple)
                 topColorFigure.setImageResource(R.drawable.ic_summary_background_purple)
             } else {
-                container.setBackgroundColor(ContextCompat.getColor(this@SummaryActivity, R.color.pink_800))
+                container.setBackgroundColor(ContextCompat.getColor(this@SummaryActivity, R.color.pink_theme))
                 topColorBar.setImageResource(R.drawable.ic_summary_top_pink)
                 topColorFigure.setImageResource(R.drawable.ic_summary_background_pink)
             }
-            themeFive.visibility = View.GONE
-            if (it.id == 5) {
-                themeFive.visibility = View.VISIBLE
-                allTextWeb.visibility = View.GONE
 
-                allTextWeb1.isVerticalScrollBarEnabled = false
-                allTextWeb1.setBackgroundColor(Color.TRANSPARENT)
-                allTextWeb1.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null)
-                allTextWeb1.loadData(getString(R.string.text_5), "text/html; charset=utf-8", "utf-8")
-
-                allTextWeb2.isVerticalScrollBarEnabled = false
-                allTextWeb2.setBackgroundColor(Color.TRANSPARENT)
-                allTextWeb2.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null)
-                allTextWeb2.loadData(getString(R.string.text_5_1), "text/html; charset=utf-8", "utf-8")
+            topicTitle.text = getString(t.title)
+            if (t.text != -1) {
+                topicText.visibility = View.VISIBLE
+                topicText.isVerticalScrollBarEnabled = false
+                topicText.setBackgroundColor(Color.TRANSPARENT)
+                topicText.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null)
+                val text = getString(R.string.html_start) + getString(topic.text) + getString(R.string.html_end)
+                val html = Base64.encodeToString(text.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
+                topicText.loadData(html, "text/html", "base64")
+            }
+            if (!t.subtopics.isNullOrEmpty()) {
+                subTopics.visibility = View.VISIBLE
+                mAdapter.addAll(t.subtopics)
             } else {
-                allTextWeb.isVerticalScrollBarEnabled = false
-                allTextWeb.setBackgroundColor(Color.TRANSPARENT)
-                allTextWeb.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null)
-                allTextWeb.loadData(getString(it.text), "text/html; charset=utf-8", "utf-8")
+                subTopics.visibility = View.GONE
+            }
+            if (t.id == 5) {
+                image1.visibility = View.VISIBLE
             }
         }
-
-
     }
 }

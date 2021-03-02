@@ -7,26 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".summary.SummaryActivity"
-    android:background="@color/pink_800">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/topColorBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_summary_top_pink"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/topColorFigure"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_summary_background_pink"
-        android:layout_marginTop="@dimen/margin_16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+    android:background="@color/pink_theme">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -75,28 +56,85 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <WebView
-        android:id="@+id/allTextWeb"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/topColorBar"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/transparent"
-        android:layout_marginTop="@dimen/margin_24"
-        android:layout_marginStart="@dimen/margin_16"
-        android:layout_marginEnd="@dimen/margin_16"
-        app:layout_constraintTop_toBottomOf="@id/app_bar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_summary_top_pink"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <include
-        android:id="@+id/themeFive"
-        layout="@layout/theme_five"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/topColorFigure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_summary_background_pink"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/app_bar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_16">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/topicTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topic_1"
+                style="@style/heading.title2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <WebView
+                android:id="@+id/topicText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="@dimen/margin_8"
+                app:layout_constraintTop_toBottomOf="@id/topicTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_mano"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/topicText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/subTopics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                tools:listitem="@layout/item_topic"
+                tools:itemCount="3"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/image1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,42 +1,20 @@
 <resources>
     <string name="app_name">Lactaguia</string>
 
-
-    <!-- cards -->
-    <string name="title_1">1.- Beneficios de la lactancia materna.</string>
-    <string name="subtitle_1">1.1. Beneficios para el bebé.\n1.2. Beneficios para la madre.</string>
-    <string name="title_2">2.- Tipos de leche materna.</string>
-    <string name="subtitle_2">2.1. Precalostro.\n2.2 Calostro.\n2.3. Leche de transición y madura.</string>
-    <string name="title_3">3.- Patrones de succión.</string>
-    <string name="subtitle_3">3.1. Patrón de succión normal.\n3.2. Patrón de succión no nutritivo.\n3.3. Uso del biberón.</string>
-    <string name="title_4">4.- Afecciones del pecho.</string>
-    <string name="subtitle_4">4.1. Pezones planos e invertidos.\n4.2. Grietas\n4.3. Mastitis.</string>
-    <string name="title_5">5.- Agarre del pecho y posiciones para amamantar.</string>
-    <string name="subtitle_5"> </string>
-    <string name="title_6">6.- Extracción, conservación y traslado de leche materna.</string>
-    <string name="subtitle_6">6.1. Extracción.\n\t6.1.1. Manual.\n\t6.1.2. Sacaleches.\n6.2. Conservación.\n6.3. Traslado.</string>
-    <string name="title_7">7.- Contraindicaciones con el uso de medicamentos y sustancias psicoactivas.</string>
-    <string name="subtitle_7">7.1. Medicamentos y sustancias contraindicados durante la lactancia.\n7.2. Medicamentos y sustancias de uso riesgoso durante la lactancia.\n7.3. Uso de la marihuana.</string>
-    <string name="title_8">8.- Nutrición de la mujer durante la lactancia.</string>
-    <string name="subtitle_8"> </string>
-    <string name="title_9">9.- Lactancia tandem.</string>
-    <string name="subtitle_9"> </string>
-    <string name="title_10">10.- “No tengo suficiente leche” Factores que influyen en la sensación de escasez de leche materna.</string>
-    <string name="subtitle_10"> </string>
-    <string name="title_11">11.- Razones médicas aceptables para el uso de sucedáneos de la leche materna.</string>
-    <string name="subtitle_11">11.1. Recién nacidos que no deben recibir leche materna ni otra leche excepto fórmula especializada.\n11.2. Madres para quienes la lactancia no está contraindicada, pero tienen condiciones médicas preocupantes o requieren el evitarla temporalmente.\n11.3. Lactancia y VIH.</string>
-    <string name="title_12">12.- Inicio de la alimentación complementaria. ¿Qué es el BLW?</string>
-    <string name="subtitle_12"> </string>
-    <string name="title_13">13.- Relactancia y lactancia inducida.</string>
-    <string name="subtitle_13"> </string>
-    <string name="title_14">14.- Destete respetuoso.</string>
-    <string name="subtitle_14"> </string>
-
-    <string name="text_1"><![CDATA[
+    <string name="html_start"><![CDATA[
     <html>
-    <body style="text-align:justify;color:white;">
-        <h3>1. Lactancia materna. Beneficios para la madre y el bebé</h3>
-        <b>1.1. Beneficios para el bebé</b><br>
+    <head>"
+    <style type=\"text/css\">body{ color: #091451; text-align:justify; }</style>
+    </head><body>]]></string>
+
+    <string name="html_end"><![CDATA[
+        </body></html>
+    ]]></string>
+
+    <!-- news cards -->
+    <string name="topic_1">Beneficios de la lactancia materna.</string>
+    <string name="subtopic_1_1">Beneficios para el bebé.</string>
+    <string name="subtopic_1_1_text"><![CDATA[
         <p>No hay ningún alimento más completo que la leche de la madre para que un niño o niña crezca protegida, inteligente, despierta y llena de vida. Por eso, la leche materna es importante durante los primeros años.<p>
         <ul>
             <li>La leche materna proporciona todos los nutrientes, vitaminas y minerales que un bebé necesita para el crecimiento durante los primeros seis meses de vida; el bebé no necesita ingerir ningún otro líquido o alimento.</li><br>
@@ -47,7 +25,9 @@
             <li>La interacción entre la madre y el niño durante la lactancia materna tiene repercusiones positivas para la vida en lo que se refiere a la estimulación, la conducta, el habla, la sensación de bienestar y la seguridad, y la forma en que el niño se relaciona con otras personas.</li><br>
             <li>Los estudios han demostrado que los bebés alimentados con leche materna obtienen mejores resultados en las pruebas de inteligencia y comportamiento en la edad adulta que los bebés alimentados con fórmula.</li>
         </ul></p>
-        <b>1.2. Beneficios para la madre</b><br>
+    ]]></string>
+    <string name="subtopic_1_2">Beneficios para la madre.</string>
+    <string name="subtopic_1_2_text"><![CDATA[
         <ul>
             <li>En la madre, a corto plazo puede ayudar a prevenir hemorragias ya que la hormona oxitocina contrae el útero</li><br>
             <li>La placenta sale con más facilidad y rápidamente</li><br>
@@ -71,31 +51,29 @@
                 </ul>
             </li>
         </ul>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_2"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>2. Tipos de leche materna.</h3>
+    <string name="topic_2">Tipos de leche materna.</string>
+    <string name="topic_2_text"><![CDATA[
         <p>La leche de la madre tiene diferentes etapas en cuanto a su composición.<p>
-        <b>2.1.Precalostro</b><br>
+    ]]></string>
+    <string name="subtopic_2_1">Precalostro.</string>
+    <string name="subtopic_2_1_text"><![CDATA[
         <p>El precalostro se produce a partir del tercer mes de gestación, la glándula mamaria produce una sustancia, formada por un agua, algunas proteínas, inmunoglobulinas, algunos minerales como el sodio y cloro y una pequeña cantidad de lactosa.</p>
-        <b>2.2. Calostro</b><br>
+    ]]></string>
+    <string name="subtopic_2_2">Calostro.</string>
+    <string name="subtopic_2_2_text"><![CDATA[
         <p>El calostro se produce los primeros 4 días después del parto, es un líquido amarillento por la presencia de beta-carotenos, estos son pigmentos naturales con acción antioxidante. El calostro es una leche muy valiosa porque tiene todos los elementos necesarios para nutrir al niño o niña desde su nacimiento; protege al niño o niña contra infecciones y otras enfermedades. Los niños que toman calostro son bebés más sanos; tiene las dosis de vitamina A y otros micronutrientes que son necesarios desde el nacimiento.</p>
-        <b>2.3. Leche de transición y madura</b><br>
+    ]]></string>
+    <string name="subtopic_2_3">Leche de transición y madura.</string>
+    <string name="subtopic_2_3_text"><![CDATA[
         <p>La leche de transición se produce entre el cuarto y el décimo día de posparto, esta leche presenta un aumento del contenido de lactosa, grasa, calorías y vitaminas hidrosolubles, una disminución en las proteínas, inmunoglobulinas y vitaminas liposolubles.</p>
         <p>La leche madura se produce a partir del 10° dia y sus principales componentes son agua (aproximadamente el 90%), carbohidratos, lípidos y proteínas. También se encuentran presentes inmunoglobulinas lgA, 1gG, lgM. La función de la IgA consiste en proteger las mucosas del recién nacido y es producida por el denominado ciclo entero-mamario. Al darle aguas, tés, o jugos en los primeros 6 meses se aumenta el riesgo de diarreas y otras infecciones además de disminuir la leche de la madre. Por eso no necesita agüitas ni tés, ni jugos, ni otro alimento. Tampoco el chupón es necesario.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_3"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>3. Patrones de succión</h3>
-        <b>3.1. Patrón de succión normal</b><br>
+    <string name="topic_3">Patrones de succión.</string>
+    <string name="subtopic_3_1">Patrón de succión normal.</string>
+    <string name="subtopic_3_1_text"><![CDATA[
         <p>La acción de la succión es una de las primeras y más complejas habilidades integradas sensorio-motoras del recién nacido. El recién nacido tiene tres reflejos que le permiten tener una succión nutritiva:<br>
             <ul>
                 <li>Reflejo de búsqueda: Es la respuesta a la estimulación de la comisura de la boca o de los bordes de los labios girando la cara y boca hacia el lado que se estimula, encontrándose presente desde las 32 semanas de gestación y mejorando progresivamente hasta el término de la misma, se inhibe y desaparece hacia los tres meses de vida extrauterina.</li><br>
@@ -103,7 +81,9 @@
                 <li>Reflejo de deglución: Se encuentra presente desde las 12 semanas de gestación, hasta alcanzar su óptima madurez semanas antes del término. La deglución se inicia cuando se recibe la sensación del líquido en la porción posterior de la boca, seguido del paso de los alimentos de la cavidad oral al esófago</li>
             </ul>
         </p>
-        <b>3.2. Patrón de succión no nutritiva</b><br>
+    ]]></string>
+    <string name="subtopic_3_2">Patrón de succión no nutritivo.</string>
+    <string name="subtopic_3_2_text"><![CDATA[
         <p>Se produce cuando no se introduce líquido en la boca. De acuerdo al comportamiento de la niña o niño al alimentarse, existen los siguientes tipos:<br>
             <ul>
                 <li>Excitado: Los bebés llegan a estar tan excitados al tomar el seno, que lo aprietan y sueltan alternativamente. Es necesario que la madre lo calme primero, antes de volverlo a colocar al seno. Después de varios días, madre e hijo se adaptan.</li><br>
@@ -112,57 +92,59 @@
                 <li>Flojo:Estas niñas y niños prefieren succionar unos minutos, descansando un poco entre succión y succión. No debe apresurárseles.</li>
             </ul>
         </p>
-        <b>3.3. Uso de biberón</b><br>
+    ]]></string>
+    <string name="subtopic_3_3">Uso del biberón.</string>
+    <string name="subtopic_3_3_text"><![CDATA[
         <p>Con el biberón el niño no necesita hacer ningún esfuerzo para darle forma dentro de su boca. Las principales diferencias entre la succión al pecho y del biberón, se deben principalmente a las características del flujo de la leche y a las del chupón, el chupón toca el paladar blando, lo cual dificulta la acción de la lengua, la lengua se mueve hacia adelante contra la encía para regular el flujo excesivo de leche hacia el esófago, la lengua se mantiene plana, los labios adoptan la forma de "O", no hay compresión, porque los músculos del carrillo están relajados.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_4"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>4. Afecciones del pecho</h3>
+    <string name="topic_4">Afecciones del pecho.</string>
+    <string name="topic_4_text"><![CDATA[
         <p>Durante la lactancia, el pecho de la madre lactante puede sufrir diversas afecciones. Los problemas del pecho durante la lactancia son temporales y tienen solución con un asesoramiento adecuado.</p>
-        <b>4.1. Pezones planos e invertidos</b>
+    ]]></string>
+    <string name="subtopic_4_1">Pezones planos e invertidos.</string>
+    <string name="subtopic_4_1_text"><![CDATA[
         <p>Los pezones planos no sobresalen hacia fuera y los invertidos están hundidos en el interior de la areola. Ninguno de estos casos incapacita para dar de mamar, lo que realmente importa no es la forma del pezón, sino su capacidad de salir hacia fuera al estimularlos (protractilidad). Se debe buscar la postura que más facilite el agarre, una vez enganchado se comprueba que su nariz y su barbilla rozan el pecho y se abre más la boca presionando su mentón con tu dedo índice o pulgar. Si el enganche es doloroso y no se soluciona con la maniobra antes mencionada, prueba a darle forma al pezón con el sacaleches antes de iniciar la toma.</p>
-        <b>4.2. Grietas</b>
+    ]]></string>
+    <string name="subtopic_4_2">Grietas.</string>
+    <string name="subtopic_4_2_text"><![CDATA[
         <p>Cuando el dolor se debe a una mala posición, y no se corrige a tiempo, pueden aparecer estas lesiones, si las lesiones perduran en el tiempo, pueden sobreinfectarse.</p>
         <p><strong>Cómo curarlas:</strong> Corregir la técnica de lactancia y valorar la presencia de problemas con la succión. Si la grieta aparece en la parte superior del pezón y es horizontal amamantar posicionando al bebé con los labios paralelos a la lesión. Si por el contrario, la grieta aparece en la punta y es vertical o en la parte inferior del pezón amamantar posicionando al bebé con la barbilla hacia el lado opuesto al habitual.</p>
         <p>Si el dolor es muy intenso, sacarse leche con un sacaleches hasta que mejore la grieta durante 24 horas y amamantar al bebé del pecho más sano. Aplicar unas gotas de la propia leche tras la toma y cuando se seque, aplicar una pequeña cantidad de pomada de lanolina purificada. Dejar la zona al aire el mayor tiempo posible. Si tras todo esto la grieta no ha mejorado en dos o tres días, valorar con un profesional experto en lactancia la aplicación de una pomada antibiótica.</p>
-        <b>4.3. Mastitis</b>
+    ]]></string>
+    <string name="subtopic_4_3">Mastitis.</string>
+    <string name="subtopic_4_3_text"><![CDATA[
         <p>Es una respuesta inflamatoria secundaria a una situación de retención mantenida de leche, que se manifiesta con un dolor intenso de una zona amplia de la mama, que está enrojecida, inflamada y se acompaña de un cuadro gripal. Es importante no interrumpir la lactancia ya que agravaría el problema.</p>
         <p>Para prevenir la mastitis se recomienda: asegurarse que el agarre es el adecuado. evitar el destete súbito, restricción de tomas, asegurarse de que el bebé termine el primer pecho antes de ofrecerle el siguiente, es importante asegurarse de que los pechos no se llenen demasiado, evitar el uso de chupetes, biberones. Comenzar tratamiento cuando se sospeche que sufres una obstrucción mamaria.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_5"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>5. Agarre adecuado del pecho y posiciones para amamantar</h3>
+    <string name="topic_5">Agarre del pecho y posiciones para amamantar.</string>
+    <string name="topic_5_text"><![CDATA[
         <p>Para facilitar el agarre y el vaciado adecuado del pecho la madre es útil el agarre espontáneo, que consiste en colocar al bebé de frente, con el pezón a la altura de la nariz y el mentón apoyado en el pecho. El bebé buscará el pezón y abrirá la boca. Si no se consigue el agarre espontáneo, puede ser útil el agarre dirigido, en la forma de “C”, la madre coloca el pulgar por detrás de la areola y los cuatro dedos por debajo.</p>
-    </body>
-    </html>
     ]]></string>
-
-    <string name="text_5_1"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
+    <string name="topic_5_text_0"><![CDATA[
+        <p>Los signos que nos indicarán el agarre correcto (figura 2): el mentón del bebé toca el pecho, la boca está bien abierta y abarca gran parte de la areola, los labios están hacia fuera (evertidos) y las mejillas están redondas (no hundidas) cuando succiona. En la figura tres se muestra un ejemplo de agarre incorrecto donde la boca del lactante no se encuentra bien abierta.</p>
+    ]]></string>
+    <string name="topic_5_text_1"><![CDATA[
         <p>Las posiciones más comúnmente utilizadas son las siguientes:</p>
         <ul>
             <li>Posición en crianza biológica: la madre está semirecostada entre 15o-65o y cómoda, el bebé está encima con la cara entre los pechos, permite que se desplace y que cabeceando busque y agarre espontáneamente el pezón.</li><br>
+        </ul>
+    ]]></string>
+    <string name="topic_5_text_2"><![CDATA[
+        <ul>
             <li>Posición de cuna: el bebe tiene su cabeza apoyada en el antebrazo, y la mano de la madre en la espalda, el bébé tiene que estar con la cabeza y su cuerpo bien alineados frente al pecho y el pezón a la altura de la nariz, acerca al bebé al pecho en lugar de desplazar el pecho hacia la boca del bebé y dale tiempo a que lo agarre espontáneamente.</li><br>
+        </ul>
+    ]]></string>
+    <string name="topic_5_text_3"><![CDATA[
+        <ul>
             <li>Posición de rugby: esta postura es útil despues de una cesárea, o si amamantas a gemelos, el cuerpo y la cabeza del bebé deben estar sujetados con el antebrazo y la mano del mismo pecho que ofreces, de forma que su cuerpo quede a tu costado y sus pies hacia la espalda de la madre, la cabeza del bebé debe estar frente al pecho con el pezón a la altura de la nariz-labio superior.</li>
         </ul>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_6"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>6. Extracción, conservación y traslado de leche materna.</h3>
-        <b>6.1 Extracción</b>
+    <string name="topic_6">Extracción, conservación y traslado de leche materna.</string>
+    <string name="subtopic_6_1">Extracción.</string>
+    <string name="subtopic_6_1_text"><![CDATA[
         <p><strong>6.1.1. Manual:</strong> Antes de manipular el pecho es importante lavarse siempre las manos; se debe preparar el pecho para facilitar la extracción, estimulando la bajada de la leche. Para ello se deben seguir tres pasos: masajear, frotar y sacudir. Para la extracción manual se coloca el pulgar y los dedos índice y medio formando una letra “C” a unos 3 ó 4 cm por detrás del pezón, empujar los dedos hacia atrás, sin separarlos y, a continuación, se ruedan los dedos y el pulgar hacia el pezón para vaciar otras partes del pecho. Este proceso (colocar los dedos, empujar hacia dentro, rodar) se repite en ambos pechos y dura aproximadamente 20 o 30 minutos.</p>
         <p><strong>6.1.2. Sacaleches:</strong> Si se opta por un sacaleches conviene darse un masaje en los pechos antes de la extracción, tal y como en la extracción manual. No todos los sacaleches son adecuados, es importante que antes de elegir se valoren las ventajas e inconvenientes de cada uno de ellos.</p>
         <ul>
@@ -175,7 +157,9 @@
                 </ul>
             </li>
         </ul>
-        <b>6.2 Conservación</b>
+    ]]></string>
+    <string name="subtopic_6_2">Conservación.</string>
+    <string name="subtopic_6_2_text"><![CDATA[
         <p>La leche debe conservarse en un recipiente de plástico sin pvc, no de vidrio. Meterla en el refrigerador o en el congelador. Es conveniente guardarla en pequeñas cantidades calculando la cantidad que vaya a tomar el niño en cada toma. Conviene poner una etiqueta en el recipiente con la fecha y la hora de extracción de la leche para utilizarla en orden. A continuación, dependiendo de dónde se vaya a guardar, se indica el tiempo que ésta permanece en buenas condiciones.</p>
         <p>Leche recién extraída</p>
         <ul>
@@ -194,19 +178,19 @@
             <li>En el refrigerador: 4 horas.</li>
             <li>Una vez calentada, si no se ha tomado todo, se debe tirar la que sobre</li>
         </ul>
-        <b>6.3. Traslado</b>
+    ]]></string>
+    <string name="subtopic_6_3">Traslado.</string>
+    <string name="subtopic_6_3_text"><![CDATA[
         <p>Para transportar la leche de un lugar a otro son muy prácticas las neveras portátiles de plástico con acumuladores de hielo. De esta manera la leche permanece a una temperatura adecuada, cuando se llegue es conveniente guardarla en el refrigerador hasta que sea utilizada. Para dar al lactante la leche extraída se utiliza un vaso o cuchara.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_7"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>7.Contraindicaciones con el uso de medicamentos y sustancias psicoactivas</h3>
+    <string name="topic_7">Contraindicaciones con el uso de medicamentos y sustancias psicoactivas.</string>
+    <string name="topic_7_text"><![CDATA[
         <p>Respecto a la utilización de fármacos en la lactancia, tienen cierta eliminación a través de la leche materna. El recién nacido no tiene aún correctamente desarrollados los mecanismos de eliminación de estos a causa de la inmadurez existente en los órganos como el hígado y riñones, y esta inmadurez puede conducir a una acumulación excesiva</p>
         <p>Antes de administrar medicamentos a la madre que está lactando, es necesario tener en cuenta la relación de medicamentos contraindicados y de uso riesgoso para el lactante. No se deben utilizar medicamentos de larga acción, establecer el horario de administración del medicamento, de acuerdo a su vida media, valorar estrechamente las condiciones generales del lactante, cuando sea posible, elegir el medicamento que alcance las menores concentraciones en la leche materna.</p>
-        <b>7.1. Medicamentos y sutancias contraindicados durante la lactancia:</b>
+    ]]></string>
+    <string name="subtopic_7_1">Medicamentos y sustancias contraindicados durante la lactancia.</string>
+    <string name="subtopic_7_1_text"><![CDATA[
         <ul>
             <li>Bromocriptina</li>
             <li>Agentes antineoplásicos (quimioterápicos)</li>
@@ -219,7 +203,9 @@
             <li>Metronidazol</li>
             <li>Ergotamina</li>
         </ul>
-        <b>7.2. Medicamentos y sustancias de uso riesgoso durante la lactancia:</b>
+    ]]></string>
+    <string name="subtopic_7_2">Medicamentos y sustancias de uso riesgoso durante la lactancia.</string>
+    <string name="subtopic_7_2_text"><![CDATA[
         <ul>
             <li>Antihistamínicos y descongestivos</li>
             <li>Anticonceptivos con altas cantidades de estrógenos</li>
@@ -236,17 +222,15 @@
             <li>Analgésicos opioides (como Percocet u OxyContin)</li>
             <li>Drogas ilícitas como la marihuana, la cocaína, la metanfetamina, el éxtasis o la heroína</li>
         </ul>
-        <b>7.3. Uso de la marihuana</b>
+    ]]></string>
+    <string name="subtopic_7_3">Uso de la marihuana.</string>
+    <string name="subtopic_7_3_text"><![CDATA[
         <p>Si bien en algunas partes del mundo se ha legalizado para uso médico o recreativo, las mujeres embarazadas o que estén amamantando NO deben consumir esta droga. El componente activo de la marihuana, el THC (tetrahidrocanabinol) puede transmitirse de la madre al bebé durante el amamantamiento, lo que podría causarle problemas de salud y de desarrollo.</p>
         <p>La marihuana podría permanecer en el sistema de la madre hasta 30 días y exponer al bebé al THC durante períodos prolongados. Además, no permita que nadie fume marihuana cerca del bebé, dado que si este inhala el humo podría padecer debilidad o problemas para alimentarse. Hay investigaciones que indican que los bebés que son expuestos a la marihuana también podrían tener problemas de conducta o de atención más adelante (trastorno por déficit de atención con hiperactividad).</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_8"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>8. Nutrición de la mujer durante la lactancia</h3>
+    <string name="topic_8">Nutrición de la mujer durante la lactancia.</string>
+    <string name="topic_8_text"><![CDATA[
         <p>Los requerimientos y necesidades nutricionales son las cantidades de energía y nutrientes que deben contener los alimentos consumidos para satisfacer los requerimientos de casi todos los individuos de una población sana. Durante la lactancia la madre necesita una cantidad adicional de alimentos para cubrir las necesidades impuestas por esta situación fisiológica. La cantidad total extra de nutrientes depende fundamentalmente de la cantidad de leche que consume el niño en 24 horas. La madre transforma la energía de su alimentación en energía contenida en la leche.</p>
         <p>El gasto energético de la lactancia es de aproximadamente de 500 Kcal. diarias. Las necesidades proteicas diarias de la lactancia se ven incrementadas al igual que el resto de los nutrientes. Un nutriente que requiere atención especial es el calcio, cuyos requerimientos durante la lactancia son de 1,200 mg. por día. Es necesario combinar y variar los alimentos a fin de cubrir las necesidades energéticas y proteicas diarias, así como de vitaminas y minerales. Una forma sencilla de transmitir a la madre los alimentos que debe ingerir, es el utilizar los grupos de alimentos. Es importante conocer cuáles son los que aportan mayor cantidad de un nutrimento.</p>
         <strong>Aporte principalmente de hidratos de carbono</strong>
@@ -259,47 +243,37 @@
             <li>Leguminosas: son granos secos que provienen de las plantas con vaina, ejemplo: frijol, soya, haba, lenteja, garbanzo, alubia.</li>
             <li>Alimentos de origen animal: incluyen las carnes de res, pollo, cerdo, pescado, queso, huevo, leche.</li>
         </ul>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_9"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>9. Lactancia tandem</h3>
+    <string name="topic_9">Lactancia tandem.</string>
+    <string name="topic_9_text"><![CDATA[
         <p>Se llama lactancia en tándem cuando la madre amamanta a la vez a bebés de embarazos distintos, o bien a uno biológico y otro adoptado. Durante el embarazo de la madre que se encuentra amamantando, cambia el sabor y la cantidad de la leche.</p>
         <p>Al llegar a la mitad del embarazo, la leche madura va dejando paso, poco a poco al calostro. Este cúmulo de cambios puede terminar en un destete de forma natural y por propia iniciativa del niño en el 60% de los casos, sin embargo existen algunas ocasiones no siempre va a ser un destete definitivo.</p>
         <p>Hay muchos mitos en nuestra sociedad relacionados con la gestación mientras se lacta. Si la madre toma una alimentación variada, que cubra todas sus necesidades nutricionales, y un suplemento de yodo, no tienen porqué tener ningún tipo de problema carencial ni ella ni sus bebés.</p>
         <p>Llegado el momento del parto, el nuevo bebé tendrá todo el calostro que necesita, listo y preparado para poder consumirlo nada más nacer, el inicio precoz del amamantamiento es tan importante ahora como lo fue en su día con el primer hijo. A su vez llega el momento de buscar nuevas posturas, más cómodas para ambos en este momento.</p>
         <p>El hermano pequeño tiene prioridad sobre el mayor en cuanto a cantidad de calostro que se le debe ofrecer; a ser posible, se le debe ofrecer los dos primeros días con mucha frecuencia. Una vez que llega la leche madura, no es preciso poner límites al hermano mayor a la hora de mamar.</p>
         <p>La leche que producen las madres que amamantan en tándem se adapta siempre a las necesidades del lactante de menor edad, cubriendo convenientemente todas las necesidades de este. No obstante, la leche que toma el mayor seguirá siendo para él más completa Hay que tener en cuenta que cuanto más succionen los hermanos, más leche producirá la madre, no habiendo límite a la hora de producir.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_10"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>10. “No tengo suficiente leche” Factores que influyen en la sensación de escasez de leche materna</h3>
+    <string name="topic_10">“No tengo suficiente leche” Factores que influyen en la sensación de escasez de leche materna.</string>
+    <string name="topic_10_text"><![CDATA[
         <p>La percepción de insuficiencia de leche es una de las principales razones para interrumpir de forma prematura la lactancia materna exclusiva. Esto puede tener orígenes sociales, psicológicos, fisiológicos o una combinación de factores.</p>
         <p>Entre las primeras 48 y 72 h después del nacimiento la producción de leche comienza a aumentar de manera rápida. Las mujeres se refieren a esto como la “bajada de la leche”. Existen ocasiones cuando la bajada de la leche se “retrasa” más de las 72 h después del nacimiento. Este retraso se ha asociado con niveles de estrés elevados durante el parto y el inicio tardío de la lactancia materna después del nacimiento. Este retraso es causa de preocupación para la madres, y por lo regular suelen introducir fórmulas infantiles u otros líquidos, interrumpiendo la lactancia materna exclusiva.</p>
         <p>Después de la “bajada de la leche” cualquier factor que intervenga con el amamantamiento a libre demanda puede disminuir de la producción de leche, por ejemplo una posición incómoda para amamantar, o bien cuando las madres regresan a trabajar y en su trabajo no existen políticas amigables con la lactancia como el establecimiento de un lactario. El síntoma principal que las mujeres reportan como razón para percibir que no producen suficiente leche es el llanto del bebé. Pero existen múltiples razones por las cuales un bebé llora y se deben diferenciar los signos reales de hambre.</p>
         <p>Los bebés pasan por periodos de crecimiento acelerado donde de manera súbita aumentan su demanda de leche, algunas madres y sus familiares interpretan esto como hambre insatisfecha del bebé cuando ésta simplemente es una fase transitoria de producción de leche que de forma eventual se estabiliza bajo el proceso de demanda-oferta. La producción de leche aumenta al amamantar con más frecuencia. La mejor manera de confirmar la adecuada producción de leche es al monitorear que el crecimiento y desarrollo del bebé.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_11"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>11. Razones médicas aceptables para el uso de sucedáneos de la leche materna</h3>
-        <b>11.1. Recién nacidos que no deben recibir leche materna ni otra leche excepto fórmula especializada</b>
+    <string name="topic_11">Razones médicas aceptables para el uso de sucedáneos de la leche materna.</string>
+    <string name="subtopic_11_1">Recién nacidos que no deben recibir leche materna ni otra leche excepto fórmula especializada.</string>
+    <string name="subtopic_11_1_text"><![CDATA[
         <ul>
             <li>Galactosemia clásica: es una alteración congénita del metabolismo de los hidratos de carbono, cuya incidencia en diferentes poblaciones es de 1 en 40,000 recién nacidos. Se necesita una fórmula especial libre de galactosa, como la de soya</li><br>
             <li>Enfermedad de orina en jarabe de arce: Las personas con esta afección no pueden metabolizar los aminoácidos leucina, isoleucina y valina, siendo su incidencia de 1 en 200,000 recién nacidos. Se necesita una fórmula especial libre de leucina, isoleucina y valina.</li><br>
             <li>Fenilcetonuria: Es un trastorno hereditario poco frecuente que provoca la acumulación de un aminoácido denominado fenilalanina en el organismo. Se requiere una fórmula especial libre de fenilalanina (se permite amamantar un poco, por un tiempo, con monitorización cuidadosa)</li>
         </ul>
-        <b>11.2. Madres para quienes la lactancia no está contraindicada, pero tienen condiciones médicas preocupantes o requieren el evitarla temporalmente.</b>
+    ]]></string>
+    <string name="subtopic_11_2">Madres para quienes la lactancia no está contraindicada, pero tienen condiciones médicas preocupantes o requieren el evitarla temporalmente.</string>
+    <string name="subtopic_11_2_text"><![CDATA[
         <ul>
             <li>Septicemia y otras enfermedades graves que hacen que la madre no pueda cuidar a su bebé.</li><br>
             <li>Herpes Simplex Tipo I: se debe evitar contacto directo ante las lesiones en el pecho materno y la boca del bebe hasta que toda lesión haya sido resuelta.</li><br>
@@ -308,48 +282,33 @@
             <li>Medicación materna: uso de medicamentos psicoterapéuticos sedativos, antiepilépticos, opioides. El uso excesivo de yodo o yodóforos tópicos puede resultar en supresión tiroidea o anormalidades electrolíticas en el bebé amamantado. La quimioterapia citotóxica requiere que la madre suspenda el amamantamiento durante la terapia.</li><br>
             <li>Uso de sustancias como nicotina, alcohol, éxtasis, anfetaminas, cocaína, opioides, benzodiacepinas y cannabis. Las madres deberían ser alentadas a no utilizar estas sustancias y tener oportunidad y apoyo para abstenerse. Las madres que eligen no suspender el uso de estas sustancias o no pueden hacerlo, deberían buscar apoyo individual sobre los riesgos y beneficios de la lactancia dependiendo de sus circunstancias individuales. Para las madres que utilizan sustancias por periodos cortos se debe considerar la suspensión de la lactancia materna durante ese tiempo.</li>
         </ul>
-        <b>11.3. Lactancia y VIH</b>
+    ]]></string>
+    <string name="subtopic_11_3">Lactancia y VIH.</string>
+    <string name="subtopic_11_3_text"><![CDATA[
         <p>La opción más apropiada de alimentación infantil de una madre infectada con el VIH depende de las circunstancias individuales y su bebe, incluyendo su condición de salud, pero se debe considerar los servicios de salud disponibles y la consejería y apoyo que pueda recibir.</p>
         <p>Existen cada vez más datos que muestran que la administración de medicamentos antirretrovíricos a la madre o al lactante puede reducir significativamente el riesgo de transmisión del VIH a través de la lactancia materna.</p>
         <p>La OMS aconseja evitar por completo la lactancia materna solo si la lactancia artificial es aceptable, factible, asequible, segura y sostenible (AFASS). Es seguro apoyar la lactancia artificial para madres seropositivas y sus bebés en entornos con escasos recursos en instituciones sanitarias del sector público.</p>
-    </body>
-    </html>
     ]]></string>
 
-
-    <string name="text_12"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>12. Inicio de la alimentación complementaria. ¿Qué es el BLW?</h3>
+    <string name="topic_12">Inicio de la alimentación complementaria. ¿Qué es el BLW?</string>
+    <string name="topic_12_text"><![CDATA[
         <p>La alimentación complementaria se considera un proceso por el cual se ofrecen al lactante alimentos sólidos o líquidos distintos de la leche materna. En los últimos años las recomendaciones han cambiado. El BLW es una forma de ofrecer la AC en la que al bebé se le permite “dirigir” el proceso desde el principio. Los padres deciden qué ofrecen (de acuerdo a lo recomendado para la edad), pero el bebé coge por sí mismo la comida que se pone a su alcance; decidiendo qué elige comer y cuánta cantidad.</p>
         <p>Este método surge a raíz de las recomendaciones de la OMS de iniciar la AC a los 6 meses, padres y profesionales comienzan a cuestionar la necesidad de los triturados. El BLW se ha estudiado en niños nacidos a término, sanos y con un desarrollo psicomotor normal. En niños prematuros se podría valorar individualmente, pero siempre atendiendo a la edad corregida de 6 meses. No se recomienda en niños con fallo de medro, dificultades neurológicas o motoras. Al principio se debe ofrecer comida tipo finger food o en palitos. Así, el bebé puede agarrar la comida con su puño y comer lo que sobresale. Cuando la habilidad motora mejora, se pueden ofrecer comidas seguras cortadas en pequeños trozos</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_13"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>13. Relactancia y lactancia inducida</h3>
+    <string name="topic_13">Relactancia y lactancia inducida.</string>
+    <string name="topic_13_text"><![CDATA[
         <p>La relactación es restablecer la lactancia materna después de haberla interrumpido durante un tiempo, por diversas circunstancias. La relactación es posible para cualquier mujer. En estos casos es esencial la motivación de la madre, el apoyo de la pareja u otros familiares y la orientación de profesionales de la salud y de los grupos de autoayuda. Se han dado casos de madres adoptivas que con ayuda de profesionales han conseguido amamantar, aunque nunca hayan tenido descendencia. Tanto la relactación como la lactancia adoptiva necesitan de un asesoramiento y seguimiento por parte de profesionales sanitarios. De cualquier manera, aunque no se consiga, por eso no se deja de alimentar bien al bebé, ni de establecer una fuerte relación afectiva con él.</p>
         <p>Según la OMS, el tiempo que se requiere para que comience la producción de leche materna varía entre unos pocos días y unas pocas semanas, pero es difícil de predecir. Según los especialistas en el tema, hay dos requerimientos indispensables para la relactación: un fuerte deseo por parte de la madre biológica o adoptiva de alimentar al niño y la estimulación del pezón. Aun así, hay factores que afectan al éxito de la relactación.</p>
-    </body>
-    </html>
     ]]></string>
 
-    <string name="text_14"><![CDATA[
-    <html>
-    <body style="text-align:justify;color:white;">
-        <h3>14. Destete respetuoso</h3>
+    <string name="topic_14">Destete respetuoso.</string>
+    <string name="topic_14_text"><![CDATA[
         <p>Tanto la OMS como UNICEF, recomiendan la lactancia exclusiva hasta los seis meses de edad y que el destete se produzcan cuando la madre y el bebé así lo deseen, lo cual puede suceder más allá de los dos años del niño.</p>
         <p>La edad en que ocurre el destete por completo, es decir, que el niño abandona definitivamente la leche materna, es variable y está influido por factores de muy diversa índole. No hay razones científicas por las que se deba recomendar dejar la leche materna a una determinada edad.</p>
         <p>El destete puede ocurrir a iniciativa de la madre o del niño. En situaciones ideales seria deseable que el destete se produjera de mutuo acuerdo y fuera un proceso tan satisfactorio y enriquecedor como la lactancia, pero esto no siempre sucede. La decisión sobre el momento del destete puede tener grandes variaciones de una madre a otra y también de un niño a otro.</p>
         <p>Cuando el destete se hace por iniciativa del hijo, es éste el que va a marcar el ritmo. Hay algunos niños que dejan el pecho de forma radical, sin mediar pacto y sin que coincida con ninguna cosa en particular. Otros van dejando de tomar poco a poco, se saltan las tomas y piden otras cosas en su lugar, generalmente afecto. A veces, esta disminución no se hace de forma uniforme, sino que hay días en los que piden más, para volver a pedir menos pasados unos días.</p>
         <p>El destete por abandono, es decir, que la madre se separe del niño por unos días, no es recomendable, ya que el niño no solo se ve privado bruscamente de la leche de su madre, sino también de su presencia, que es vital para su salud afectiva y emocional. No tiene sentido ofrecer biberones a los niños que saben beber en vasos de aprendizaje o en vasos normales porque vayamos a destetarlos, pues estamos introduciendo un objeto que tendrá que abandonar nuevamente tarde o temprano, con el consiguiente gasto emocional que implica.</p>
-    </body>
-    </html>
     ]]></string>
-
-
 
 </resources>
