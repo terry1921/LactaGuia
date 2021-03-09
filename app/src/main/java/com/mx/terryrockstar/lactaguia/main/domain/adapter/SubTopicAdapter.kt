@@ -55,8 +55,8 @@ class SubTopicAdapter: RecyclerView.Adapter<SubTopicAdapter.Holder>()  {
             }
             title.setText(subTopic.title)
             val text = view.context.getString(R.string.html_start) + view.context.getString(subTopic.text) + view.context.getString(R.string.html_end)
-            val html = Base64.encodeToString(text.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
-            webText.loadData(html, "text/html", "base64")
+            val html = Base64.encodeToString(text.toByteArray(), Base64.DEFAULT)
+            webText.loadData(html, "text/html; charset=UTF-8", "base64")
 
             when (subTopic.id) {
                 50 -> {

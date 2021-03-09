@@ -50,10 +50,10 @@ class SummaryActivity : AppCompatActivity() {
                 topicText.visibility = View.VISIBLE
                 topicText.isVerticalScrollBarEnabled = false
                 topicText.setBackgroundColor(Color.TRANSPARENT)
-                topicText.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null)
+                topicText.setLayerType(WebView.LAYER_TYPE_NONE, null)
                 val text = getString(R.string.html_start) + getString(topic.text) + getString(R.string.html_end)
-                val html = Base64.encodeToString(text.toByteArray(Charsets.UTF_8), Base64.DEFAULT)
-                topicText.loadData(html, "text/html", "base64")
+                val html = Base64.encodeToString(text.toByteArray(), Base64.DEFAULT)
+                topicText.loadData(html, "text/html; charset=UTF-8", "base64")
             }
             if (!t.subtopics.isNullOrEmpty()) {
                 subTopics.visibility = View.VISIBLE
